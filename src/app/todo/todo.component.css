@@ -1,55 +1,62 @@
 .main {
   margin: 2vw 10vw 0vw 10vw;
-  padding: 2vw;
+  padding: 1vw 2vw;
   background-color: white;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   border-radius: 3px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .h1 {
-  font-size: 30em;
+  font-size: 1.2em;
 }
 
 .h2 {
-  font-size: 15em;
-  margin-bottom: 10px;
+  font-size: 0.7em;
 }
 
 .filter,
 .add {
-  font-size: 20em;
-  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   border: 1px solid #eee;
   padding: 3px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3em;
 }
 
 .complete-button {
-  font-size: 15em;
   color: #ff1493;
   border: 1px solid #ff1493;
   background-color: white;
   border-radius: 5px;
+  padding: 0px 1px;
   font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  margin-right: 2px;
 }
 
-.table,
-.form {
+.add-form,
+.filter-form {
   display: flex;
   flex-direction: column;
   margin: 5px 0px;
+  font-size: 10px;
 }
 
-.task,
-.index {
-  font-size: 15em;
+.list {
+  font-size: 0.7em;
+  margin-left: 10px;
+}
+
+.list-item {
+  display: flex;
+  padding-top: 5px;
+  align-items: center;
 }
 
 .task {
-  width: 100vw;
+  flex: 1;
 }
 
 .complete {
@@ -59,25 +66,21 @@
 .x {
   border-style: none;
   background-color: white;
-  font-size: 15em;
   outline: none;
+  font-size: 10px;
 }
 .x:focus,
 .complete-button {
   outline: none;
 }
 
-.x-container {
-  flex-grow: 1;
-}
-
 .add-button {
-  font-size: 20em;
   color: white;
   border: 1px solid #ff1493;
   background-color: #ff1493;
   border-radius: 5px;
-  padding: 5px;
-  font-family: "Open Sans", sans-serif;
+  padding: 2px;
   margin-top: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
 }

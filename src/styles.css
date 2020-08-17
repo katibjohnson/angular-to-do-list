@@ -1,12 +1,13 @@
-html {
-  font-size: 0.1vw;
-}
-
 body,
-div,
+main,
 h1,
 h2,
-p {
+p,
+button,
+input,
+span,
+ol,
+li {
   margin: 0;
   padding: 0;
 }

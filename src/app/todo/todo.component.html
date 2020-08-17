@@ -1,31 +1,30 @@
-<div class="main">
+<main class="main">
   <h1 class="h1">TODO List</h1>
   <h2 class="h2">A place to store your todos</h2>
-  <input
-    type="text"
-    name="filter"
-    class="filter"
-    id="filter"
-    placeholder="Filter your to-dos"
-  />
-  <table class="table">
-    <tr *ngFor="let todo of todos; let i = index">
-      <td class="index">{{ i + 1 }}.</td>
-      <td
-        *ngIf="todo.completed === false"
-        [class.uncomplete]="todo.completed === false"
-      >
-        >
-        <button class="complete-button">Complete</button>
-      </td>
+  <form class="filter-form">
+    <input
+      type="text"
+      name="filter"
+      class="filter"
+      id="filter"
+      placeholder="Filter your to-dos"
+    />
+  </form>
+  <ol class="list">
+    <li *ngFor="let todo of todos">
+      <div class="list-item">
+        <button class="complete-button" *ngIf="todo.completed === false">
+          Complete
+        </button>
+        <span class="task" [class.complete]="todo.completed">{{
+          todo.task
+        }}</span>
+        <button class="x">X</button>
+      </div>
+    </li>
+  </ol>
 
-      <td class="task" [ngClass]="{ complete: todo.completed === true }">
-        {{ todo.task }}
-      </td>
-      <td class="x-container"><button class="x">X</button></td>
-    </tr>
-  </table>
-  <form class="form">
+  <form class="add-form">
     <input
       type="text"
       name="add"
@@ -35,4 +34,4 @@
     />
     <button class="add-button">Add</button>
   </form>
-</div>
+</main>
