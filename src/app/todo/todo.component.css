@@ -1,0 +1,83 @@
+.main {
+  margin: 2vw 10vw 0vw 10vw;
+  padding: 2vw;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.h1 {
+  font-size: 30em;
+}
+
+.h2 {
+  font-size: 15em;
+  margin-bottom: 10px;
+}
+
+.filter,
+.add {
+  font-size: 20em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  border: 1px solid #eee;
+  padding: 3px;
+}
+
+.complete-button {
+  font-size: 15em;
+  color: #ff1493;
+  border: 1px solid #ff1493;
+  background-color: white;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.table,
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0px;
+}
+
+.task,
+.index {
+  font-size: 15em;
+}
+
+.task {
+  width: 100vw;
+}
+
+.complete {
+  text-decoration-line: line-through;
+}
+
+.x {
+  border-style: none;
+  background-color: white;
+  font-size: 15em;
+  outline: none;
+}
+.x:focus,
+.complete-button {
+  outline: none;
+}
+
+.x-container {
+  flex-grow: 1;
+}
+
+.add-button {
+  font-size: 20em;
+  color: white;
+  border: 1px solid #ff1493;
+  background-color: #ff1493;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 10px;
+}

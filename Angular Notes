@@ -1,0 +1,63 @@
+Angular is a platform and framework used to build client applications in HTML and TypeScript.
+
+Angular is written using TypeScript, which is essentially a superset of JavaScript.
+It fully compiles to JavaScript, and is used to help eliminate common mistakes when actually typing the code, providing what is known as type safety.
+
+Angular uses a design pattern known as component based architecture.
+Components are small pieces of an interface that are independent of each other.
+This architecture is similar to MVC (Model View Controller) architecture, but allows for higher reusability of components across the app.
+
+SINGLE PAGE APPLICATIONS
+
+SPA can be characterized by having an outer "shell" that serves as the header and navigation for the site while the content of the page changes as different parts of the site is visited.  It is not reloading each time.
+ng
+
+Building Blocks
+● NgModules
+● Components
+● Services
+
+COMPONENTS 
+
+Components define views.
+An Angular application has to have at least one component.
+There will always be a root component that connects component hierarchy with the DOM.
+Each component is a class that contains application logic and the data that corresponds with an HTML template.
+
+
+Create Application
+To create a workspace and initial application run this command:
+ng new my-app
+This will pull up some prompts to decide initial settings for the project.
+choose y for routing
+and CSS 
+
+to open the project in your browser,  run command
+ng serve -o
+
+command
+
+ng g c nameofcomponent
+ng - Angular
+g - generator
+c - component
+
+
+
+ng g i nameofinterface 
+
+OR you can put all interfaces in a folder using:
+
+ng g i interfaces/nameofinterface
+
+<!-- myName property is being rendered from the students.component.ts class section through interpolation -->
+<h1>My name is {{ myName }}</h1>
+
+<!-- angular structural directives are things we can add to html to extend its functionality -->
+
+<!-- *ngFor="let person of students" is a directive that is looping through our students array (in students.comp.ts) and using the html code to show the students names in a paragraph. We used interpolation to insert the array and property we want to loop through -->
+<p *ngFor="let person of students">{{ person.name }}</p>
+
+
+ng class
+<some-element [ngClass]="{'first': true, 'second': true, 'third': false}">...</some-element>

@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  font-size: 0.1vw;
+}
+
+body,
+div,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, #f857a6, #ff5858);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
