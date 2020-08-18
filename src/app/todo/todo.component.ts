@@ -37,7 +37,17 @@ export class TodoComponent implements OnInit {
 
   searchTerm: string;
 
+  showIndex: number;
+
   constructor() {}
+
+  setShowIndex(index: number) {
+    this.showIndex = index;
+  }
+
+  resetShowIndex() {
+    this.showIndex = undefined;
+  }
 
   addTask(form: NgForm) {
     let newTask: Todo = {
@@ -59,7 +69,7 @@ export class TodoComponent implements OnInit {
     this.searchTerm = form.value.searchTerm.toLowerCase().trim();
   }
 
-  filter() {
+  myFilterMethod() {
     if (!this.searchTerm) {
       return this.todos;
     } else {

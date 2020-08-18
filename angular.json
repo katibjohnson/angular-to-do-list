@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "to-do-lab"
+    }
+  },
+  "defaultProject": "to-do-lab",
+  "cli": {
+    "analytics": false
+  }
 }
